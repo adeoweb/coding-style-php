@@ -10,13 +10,13 @@ composer config repositories.adeoweb vcs ssh://git@dev.adeoweb.biz:7999/m2m/adeo
 ```
 2. Add package:
 ````
-composer require --dev adeoweb/adeo-coding-style-php
+composer require --dev adeoweb/adeo-coding-style-php@stable
 ````
 3. To add the code standard please include this into the `phpcs.xml` and modify it accordingly:
 ```
 <?xml version="1.0"?>
 <ruleset>
-    <rule ref="./vendor/adeoweb/adeo-coding-style-php/src/Magento/ruleset.xml"/>
+    <rule ref="./vendor/adeoweb/adeo-coding-style-php/standard/Magento/ruleset.xml"/>
     <file>./src</file>
 </ruleset>
 ```
