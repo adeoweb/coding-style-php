@@ -4,4 +4,11 @@
     <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
         <type>warning</type>
     </rule>
+    <rule ref="Generic.Files.LineLength">
+        <type>warning</type>
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
 </ruleset>
