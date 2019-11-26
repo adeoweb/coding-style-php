@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ruleset name="AdeoWeb">
+    <rule ref="../PHP/ruleset.xml"/>
+    <rule ref="./vendor/magento/magento-coding-standard/Magento2/ruleset.xml"/>
+</ruleset>

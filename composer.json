@@ -1,0 +1,9 @@
+{
+    "name": "adeoweb/adeo-coding-style-php",
+    "description": "AdeoWeb standards",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "magento/magento-coding-standard": "5"
+    }
+}
