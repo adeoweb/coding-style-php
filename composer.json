@@ -2,7 +2,7 @@
     "name": "adeoweb/adeo-coding-style-php",
     "description": "AdeoWeb standards",
     "type": "library",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "magento/magento-coding-standard": "5"
     }
