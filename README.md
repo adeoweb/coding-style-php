@@ -33,3 +33,8 @@ Also you can run `phpcbf` from the command-line to fix your code `MyAwesomeExten
 ```
 $ vendor/bin/phpcbf app/code/MyAwesomeExtension
 ``` 
+
+### Versions
+Releases are made when there is a:
+ - Patch: messages of type WARNING has changed: it was added, removed, parameters changed
+ - Minor: the message of type ERROR has been changed
