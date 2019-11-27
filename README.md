@@ -6,11 +6,11 @@ A set of AdeoWeb rules for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_Co
 To use within your project you can use:
 1. Add our repo:
 ```
-composer config repositories.adeoweb vcs ssh://git@dev.adeoweb.biz:7999/m2m/adeo-coding-style-php.git
+composer config repositories.adeoweb vcs https://dev.adeoweb.biz:8453/scm/m2m/adeo-coding-style-php.git
 ```
 2. Add package:
 ````
-composer require --dev adeoweb/adeo-coding-style-php@stable
+composer require --dev adeoweb/adeo-coding-style-php
 ````
 3. To add the code standard please include this into the `phpcs.xml` and modify it accordingly:
 ```
