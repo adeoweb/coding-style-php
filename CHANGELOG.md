@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 0.1.1 (2019-11-29)
+
+### New
+
+* switch places between the php and magento
+
+
 ## 0.1.0 (2019-11-29)
 
 ### Fix
