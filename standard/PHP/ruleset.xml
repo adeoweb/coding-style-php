@@ -11,4 +11,7 @@
             <property name="absoluteLineLimit" value="0"/>
         </properties>
     </rule>
+    <rule ref="PSR2.Files.EndFileNewline">
+        <type>error</type>
+    </rule>
 </ruleset>
