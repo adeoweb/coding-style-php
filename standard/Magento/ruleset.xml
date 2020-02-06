@@ -2,4 +2,7 @@
 <ruleset name="AdeoWeb">
     <rule ref="./vendor/magento/magento-coding-standard/Magento2/ruleset.xml"/>
     <rule ref="../PHP/ruleset.xml"/>
+    <rule ref="Magento2">
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing" />
+    </rule>
 </ruleset>
