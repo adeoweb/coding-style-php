@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 0.1.2 (2020-02-06)
+
+### New
+
+* disable double rule checking on magento 2
+
+
 ## 0.1.1 (2019-11-29)
 
 ### New
