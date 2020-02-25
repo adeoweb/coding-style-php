@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 0.2.0 (2020-02-25)
+
+### New
+
+* added common rules for php
+
+
 ## 0.1.2 (2020-02-06)
 
 ### New
