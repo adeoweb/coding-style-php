@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ruleset name="AdeoWebCodingStandardMagento">
+    <rule ref="../ruleset.xml"/>
+    <rule ref="./vendor/magento/magento-coding-standard/Magento2/ruleset.xml">
+        <exclude name="Magento2.Security.InsecureFunction.Found" />
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing" />
+    </rule>
+    <rule ref="Generic.PHP.DisallowAlternativePHPTags.MaybeASPOpenTagFound">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration.MissingVariable">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
+        <type>warning</type>
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Files.LineLength.LineTooLong">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators.PreIncrementOperatorNotUsedStandalone">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+        <exclude-pattern>*.phtml</exclude-pattern>
+    </rule>
+</ruleset>

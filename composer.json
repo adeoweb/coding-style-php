@@ -3,7 +3,13 @@
     "description": "AdeoWeb standards",
     "type": "library",
     "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "AdeoWebCodingStandard\\": "src/AdeoWebCodingStandard"
+        }
+    },
     "require": {
-        "magento/magento-coding-standard": "5"
+        "magento/magento-coding-standard": "5",
+        "slevomat/coding-standard": "^6.3"
     }
 }
