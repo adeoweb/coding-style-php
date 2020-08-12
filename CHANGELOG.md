@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 1.0.0-alpha3 (2020-08-12)
+
+### Fix
+
+* control rules expanded
+
+
 ## 1.0.0-alpha2 (2020-08-12)
 
 ### Fix
