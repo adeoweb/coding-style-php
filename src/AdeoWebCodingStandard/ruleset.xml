@@ -81,14 +81,10 @@
     <rule ref="PEAR.Files.IncludingFile"/>
     <rule ref="PEAR.Formatting.MultiLineAssignment"/>
 
-
-
 <!--    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility">-->
 <!--        <exclude name="SlevomatCodingStandard.Classes.ClassConstantVisibility.MissingConstantVisibility"/>-->
 <!--    </rule>-->
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>-->
-
-
 
     <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
     <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
@@ -111,17 +107,22 @@
     <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing"/>
     <rule ref="SlevomatCodingStandard.Classes.PropertySpacing"/>
     <rule ref="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/>
-    <rule ref="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature"/>
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"><type>warning</type></rule>
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming"><type>warning</type></rule>
-    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming">
-        <type>warning</type>
+    <rule ref="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature">
+        <properties>
+            <property name="maxLineLength" value="120"/>
+        </properties>
     </rule>
+<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"><type>warning</type></rule>-->
+<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming"><type>warning</type></rule>-->
+<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming">-->
+<!--        <type>warning</type>-->
+<!--    </rule>-->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousTraitNaming"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseDeclaration"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing">
         <properties>
             <property name="linesCountBeforeFirstUse" value="0"/>
+            <property name="linesCountAfterLastUseWhenLastInClass" value="0" />
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
@@ -163,7 +164,13 @@
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty"/>-->
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
+        <properties>
+            <property name="ignoreStandaloneIfInScope" value="true"/>
+            <property name="ignoreOneLineTrailingIf" value="true"/>
+            <property name="ignoreTrailingIfWithOneInstruction" value="true"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.JumpStatementsSpacing">
         <properties>
             <property name="linesCountAfterWhenLastInLastCaseOrDefault" value="0"/>
@@ -181,7 +188,9 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator">
+        <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator.MultiLineTernaryOperatorNotUsed"/>
+    </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
@@ -211,8 +220,8 @@
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>
+<!--    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>-->
+<!--    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions">
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
@@ -230,7 +239,7 @@
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
         <exclude name="SlevomatCodingStandard.Namespaces.UseSpacing.IncorrectLinesCountBetweenDifferentTypeOfUse"/>
     </rule>
-    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
+<!--    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>-->
     <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>
 <!--    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>-->
