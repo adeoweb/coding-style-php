@@ -1,6 +1,20 @@
 CHANGELOG
 =========
 
+## 1.0.0-alpha2 (2020-08-12)
+
+### Fix
+
+* control rules
+
+
+## 1.0.0-alpha (2020-04-03)
+
+### New
+
+* added more control with vendor rules
+
+
 ## 0.2.0 (2020-02-25)
 
 ### New
