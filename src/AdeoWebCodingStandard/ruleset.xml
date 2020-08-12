@@ -208,7 +208,7 @@
     </rule>
 <!--    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>-->
     <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration"/>
-    <rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>
+<!--    <rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>-->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/>
     <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
@@ -239,8 +239,8 @@
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
         <exclude name="SlevomatCodingStandard.Namespaces.UseSpacing.IncorrectLinesCountBetweenDifferentTypeOfUse"/>
     </rule>
-<!--    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>-->
-    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>
+    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
+<!--    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>-->
     <rule ref="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/>
@@ -250,7 +250,7 @@
     <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
     <rule ref="SlevomatCodingStandard.PHP.DisallowReference"><type>warning</type></rule>
     <rule ref="SlevomatCodingStandard.PHP.ForbiddenClasses"/>
-    <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/>
+    <rule ref="SlevomatCodingStandard.PHP.Optimi`zedFunctionsWithoutUnpacking"/>
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
     <rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion">
         <type>warning</type>
