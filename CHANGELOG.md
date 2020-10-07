@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 1.0.0-apha4 (2020-10-07)
+
+### Fix
+
+* soften requrements
+
+
 ## 1.0.0-alpha3 (2020-08-12)
 
 ### Fix
