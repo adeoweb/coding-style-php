@@ -250,7 +250,7 @@
     <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
     <rule ref="SlevomatCodingStandard.PHP.DisallowReference"><type>warning</type></rule>
     <rule ref="SlevomatCodingStandard.PHP.ForbiddenClasses"/>
-    <rule ref="SlevomatCodingStandard.PHP.Optimi`zedFunctionsWithoutUnpacking"/>
+    <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/>
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
     <rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion">
         <type>warning</type>
