@@ -14,6 +14,9 @@
     <rule ref="PSR2.Files.EndFileNewline">
         <type>error</type>
     </rule>
+    <rule ref="PSR2.Namespaces.UseDeclaration">
+        <exclude name="PSR2.Namespaces.UseDeclaration.MultipleDeclarations"/>
+    </rule>
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
     <rule ref="Squiz.WhiteSpace.MemberVarSpacing">
         <properties>
@@ -29,7 +32,7 @@
     </rule>
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
         <properties>
-            <property name="spacing" value="1" />
+            <property name="spacing" value="1"/>
             <property name="spacingAfterLast" value="0"/>
             <property name="spacingBeforeFirst" value="0"/>
         </properties>

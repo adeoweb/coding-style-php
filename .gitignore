@@ -1,2 +1,13 @@
-/vendor/
+# Windows files
+Thumbs.db
+
+# IDE
+/.vscode
+/.idea
+
+# OS X
+.DS_Store
+
+# Composer
+/vendor
 /composer.lock
