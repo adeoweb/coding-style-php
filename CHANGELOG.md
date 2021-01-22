@@ -1,6 +1,52 @@
 CHANGELOG
 =========
 
+## 1.0.0 (2021-01-22)
+
+### Fix
+
+* delete commented rules
+* uups
+* soften requrements
+* control rules expanded
+* control rules
+
+### New
+
+* added more control with vendor rules
+
+
+## 0.2.1 (2020-12-23)
+
+
+## 1.0.0-apha4 (2020-10-07)
+
+### Fix
+
+* soften requrements
+
+
+## 1.0.0-alpha3 (2020-08-12)
+
+### Fix
+
+* control rules expanded
+
+
+## 1.0.0-alpha2 (2020-08-12)
+
+### Fix
+
+* control rules
+
+
+## 1.0.0-alpha (2020-04-03)
+
+### New
+
+* added more control with vendor rules
+
+
 ## 0.2.0 (2020-02-25)
 
 ### New
