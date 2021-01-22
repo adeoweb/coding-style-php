@@ -7,7 +7,7 @@
 <!--    <autoload>./vendor/autoload.php</autoload>-->
     <config name="installed_paths" value="../../slevomat/coding-standard"/><!-- relative path from PHPCS source location -->
 
-
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
     <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
@@ -56,9 +56,9 @@
             <property name="spacingBeforeFirst" value="0"/>
         </properties>
     </rule>
-    <rule ref="Squiz.NamingConventions.ValidVariableName">
-        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
-    </rule>
+<!--    <rule ref="Squiz.NamingConventions.ValidVariableName">-->
+<!--        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>-->
+<!--    </rule>-->
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
         <properties>
             <property name="spacing" value="1" />
@@ -188,9 +188,9 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
 <!--    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator">
-        <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator.MultiLineTernaryOperatorNotUsed"/>
-    </rule>
+<!--    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator">-->
+<!--        <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator.MultiLineTernaryOperatorNotUsed"/>-->
+<!--    </rule>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
@@ -215,7 +215,7 @@
     <rule ref="SlevomatCodingStandard.Functions.StrictCall"/>
     <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
-    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter"><type>warning</type></rule>
+<!--    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter"><type>warning</type></rule>-->
     <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
@@ -239,7 +239,7 @@
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
         <exclude name="SlevomatCodingStandard.Namespaces.UseSpacing.IncorrectLinesCountBetweenDifferentTypeOfUse"/>
     </rule>
-    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>
+<!--    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>-->
 <!--    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>-->
@@ -248,7 +248,7 @@
     <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
     <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing"/>
     <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
-    <rule ref="SlevomatCodingStandard.PHP.DisallowReference"><type>warning</type></rule>
+<!--    <rule ref="SlevomatCodingStandard.PHP.DisallowReference"><type>warning</type></rule>-->
     <rule ref="SlevomatCodingStandard.PHP.ForbiddenClasses"/>
     <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/>
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
