@@ -2,9 +2,6 @@
 <ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="AdeoWebCodingStandard" xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
     <description>A custom coding standard.</description>
 
-    <!--    <rule ref="./vendor/slevomat/coding-standard/SlevomatCodingStandard/ruleset.xml">-->
-
-<!--    <autoload>./vendor/autoload.php</autoload>-->
     <config name="installed_paths" value="../../slevomat/coding-standard"/><!-- relative path from PHPCS source location -->
 
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
@@ -56,9 +53,6 @@
             <property name="spacingBeforeFirst" value="0"/>
         </properties>
     </rule>
-<!--    <rule ref="Squiz.NamingConventions.ValidVariableName">-->
-<!--        <exclude name="Squiz.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>-->
-<!--    </rule>-->
     <rule ref="Squiz.WhiteSpace.FunctionSpacing">
         <properties>
             <property name="spacing" value="1" />
@@ -81,11 +75,6 @@
     <rule ref="PEAR.Files.IncludingFile"/>
     <rule ref="PEAR.Formatting.MultiLineAssignment"/>
 
-<!--    <rule ref="SlevomatCodingStandard.Classes.ClassConstantVisibility">-->
-<!--        <exclude name="SlevomatCodingStandard.Classes.ClassConstantVisibility.MissingConstantVisibility"/>-->
-<!--    </rule>-->
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>-->
-
     <rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation"/>
     <rule ref="SlevomatCodingStandard.Arrays.MultiLineArrayEndBracketPlacement"/>
     <rule ref="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace"/>
@@ -103,7 +92,6 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.MethodSpacing"/>
-<!--    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>-->
     <rule ref="SlevomatCodingStandard.Classes.ParentCallSpacing"/>
     <rule ref="SlevomatCodingStandard.Classes.PropertySpacing"/>
     <rule ref="SlevomatCodingStandard.Classes.RequireMultiLineMethodSignature"/>
@@ -112,11 +100,6 @@
             <property name="maxLineLength" value="120"/>
         </properties>
     </rule>
-<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming"><type>warning</type></rule>-->
-<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming"><type>warning</type></rule>-->
-<!--    <rule ref="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming">-->
-<!--        <type>warning</type>-->
-<!--    </rule>-->
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousTraitNaming"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseDeclaration"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing">
@@ -134,8 +117,6 @@
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenAnnotations"/>
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
-<!--    <rule ref="SlevomatCodingStandard.Commenting.RequireOneLineDocComment"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Commenting.RequireOneLinePropertyDocComment"/>-->
     <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment"/>
     <rule ref="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition">
@@ -155,14 +136,10 @@
                 <element value="T_FOREACH"/>
                 <element value="T_SWITCH"/>
                 <element value="T_TRY"/>
-                <!--                <element value="T_CASE"/>-->
-                <!--                <element value="T_DEFAULT"/>-->
             </property>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty"/>-->
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowShortTernaryOperator"/>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
         <properties>
@@ -178,7 +155,6 @@
             <property name="tokensToCheck" type="array">
                 <element value="T_GOTO"/>
                 <element value="T_CONTINUE"/>
-                <!--                <element value="T_RETURN"/>-->
                 <element value="T_THROW"/>
                 <element value="T_YIELD"/>
                 <element value="T_YIELD_FROM"/>
@@ -186,11 +162,7 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
-<!--    <rule ref="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator">-->
-<!--        <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator.MultiLineTernaryOperatorNotUsed"/>-->
-<!--    </rule>-->
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceEqualOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireShortTernaryOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
@@ -198,7 +170,6 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"><type>warning</type></rule>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
-<!--    <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>-->
     <rule ref="SlevomatCodingStandard.Files.LineLength">
         <type>warning</type>
         <properties>
@@ -206,49 +177,36 @@
             <property name="ignoreComments" value="true"/>
         </properties>
     </rule>
-<!--    <rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName"/>-->
     <rule ref="SlevomatCodingStandard.Functions.ArrowFunctionDeclaration"/>
-<!--    <rule ref="SlevomatCodingStandard.Functions.DisallowArrowFunction"/>-->
     <rule ref="SlevomatCodingStandard.Functions.DisallowEmptyFunction"/>
     <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction"/>
     <rule ref="SlevomatCodingStandard.Functions.StaticClosure"/>
     <rule ref="SlevomatCodingStandard.Functions.StrictCall"/>
     <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall"/>
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
-<!--    <rule ref="SlevomatCodingStandard.Functions.UnusedParameter"><type>warning</type></rule>-->
     <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameAfterKeyword"/>
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalConstants"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions">
         <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
     </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
         <exclude name="SlevomatCodingStandard.Namespaces.UseSpacing.IncorrectLinesCountBetweenDifferentTypeOfUse"/>
     </rule>
-<!--    <rule ref="SlevomatCodingStandard.Numbers.DisallowNumericLiteralSeparator"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Numbers.RequireNumericLiteralSeparator"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>-->
-<!--    <rule ref="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators"/>-->
     <rule ref="SlevomatCodingStandard.Operators.NegationOperatorSpacing"/>
     <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
     <rule ref="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
     <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing"/>
     <rule ref="SlevomatCodingStandard.PHP.DisallowDirectMagicInvokeCall"/>
-<!--    <rule ref="SlevomatCodingStandard.PHP.DisallowReference"><type>warning</type></rule>-->
     <rule ref="SlevomatCodingStandard.PHP.ForbiddenClasses"/>
     <rule ref="SlevomatCodingStandard.PHP.OptimizedFunctionsWithoutUnpacking"/>
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
@@ -267,7 +225,6 @@
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
         <type>warning</type>
     </rule>
-    <!--    <rule ref="SlevomatCodingStandard.TypeHints.DisallowArrayTypeHintSyntax"/>-->
     <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"><type>warning</type></rule>
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
@@ -289,16 +246,6 @@
     <rule ref="SlevomatCodingStandard.Variables.UnusedVariable"/>
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
     <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"/>
-
-
-
-<!--        -->
-<!--&lt;!&ndash;        <exclude name="SlevomatCodingStandard.Classes.ModernClassNameReference"/>&ndash;&gt;-->
-
-<!--        <exclude name="Squiz.WhiteSpace.ControlStructureSpacing.SpacingAfterOpen"/>-->
-<!--        <exclude name="Squiz.Commenting.VariableComment.IncorrectVarType"/>-->
-<!--    </rule>-->
-
     <rule ref="AdeoWebCodingStandard.Operators.ComparisonOperatorUsage.NotAllowed">
         <type>warning</type>
     </rule>
