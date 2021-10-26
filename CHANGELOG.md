@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 1.0.2 (2021-10-26)
+
+### Update
+
+* round 2 for update magento dependency
+
+
 ## 1.0.1 (2021-10-26)
 
 ### Update
