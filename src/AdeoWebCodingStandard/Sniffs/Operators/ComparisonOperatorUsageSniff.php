@@ -15,7 +15,7 @@ class ComparisonOperatorUsageSniff implements Sniff
     ];
 
     /**
-     * @return string[]
+     * @inheritDoc
      */
     public function register(): array
     {
@@ -25,6 +25,9 @@ class ComparisonOperatorUsageSniff implements Sniff
         ];
     }
 
+    /**
+     * @inheritDoc
+     */
     public function process(File $phpcsFile, $stackPtr): void
     {
         $tokens = $phpcsFile->getTokens();
