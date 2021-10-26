@@ -9,7 +9,7 @@
         }
     },
     "require": {
-        "magento/magento-coding-standard": "3|4|5",
+        "magento/magento-coding-standard": "^3",
         "slevomat/coding-standard": "^6.3"
     }
 }
