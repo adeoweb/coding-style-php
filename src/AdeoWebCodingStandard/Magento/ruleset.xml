@@ -33,4 +33,31 @@
     <rule ref="Generic.Files.LineLength">
         <exclude-pattern>*.phtml</exclude-pattern>
     </rule>
+    <!-- Swagger -->
+    <rule ref="SlevomatCodingStandard.Commenting.UselessFunctionDocComment">
+        <exclude-pattern>*/(Service|Api)/*.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation">
+        <exclude-pattern>*/(Service|Api)/*.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation">
+        <exclude-pattern>*/(Service|Api)/*.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint">
+        <exclude-pattern>*/(Service|Api)/*.php$</exclude-pattern>
+    </rule>
+    <!-- General PHP -->
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
+        <exclude-pattern>*Interface.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation">
+        <exclude-pattern>*Interface.php$</exclude-pattern>
+    </rule>
+    <!-- Plugin -->
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint">
+        <exclude-pattern>*/Plugin/*.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification">
+        <exclude-pattern>*/Plugin/*.php$</exclude-pattern>
+    </rule>
 </ruleset>
