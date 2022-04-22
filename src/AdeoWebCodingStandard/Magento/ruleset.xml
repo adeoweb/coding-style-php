@@ -60,4 +60,11 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification">
         <exclude-pattern>*/Plugin/*.php$</exclude-pattern>
     </rule>
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
+        <exclude-pattern>*/Plugin/*.php$</exclude-pattern>
+    </rule>
+    <!-- GraphQL -->
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
+        <exclude-pattern>*/Resolver/*.php$</exclude-pattern>
+    </rule>
 </ruleset>
