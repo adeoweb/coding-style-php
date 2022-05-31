@@ -1,6 +1,30 @@
 CHANGELOG
 =========
 
+## 1.1.0 (2022-05-17)
+
+### Update
+
+* upgrade slevomat dependencies to 7
+
+
+## 1.0.6 (2022-04-22)
+
+
+## 1.0.5 (2022-03-15)
+
+### Update
+
+* for unused uses add search annotations to true
+
+
+## 1.0.4 (2022-02-10)
+
+### Update
+
+* add commont magento rules
+
+
 ## 1.0.3 (2021-10-26)
 
 ### Update
