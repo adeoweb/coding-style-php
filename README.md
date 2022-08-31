@@ -4,24 +4,11 @@ A set of AdeoWeb rules for [PHP_CodeSniffer](https://github.com/squizlabs/PHP_Co
 
 ### Installation
 To use within your project you can use:
-1. Add our repo:
-```json
-{
-  "repositories": [{
-    "type": "composer",
-    "url": "https://composer.adeoweb.biz"
-  }]
-}
-```
-or
-```shell script
-$ composer config repositories.adeoweb vcs https://dev.adeoweb.biz:8453/scm/m2m/adeo-coding-style-php.git
-```
-2. Add package:
+1. Add package:
 ````shell script
 $ composer require --dev adeoweb/adeo-coding-style-php
 ````
-3. To add the code standard please include this into the `phpcs.xml` and modify it accordingly:
+2. To add the code standard please include this into the `phpcs.xml` and modify it accordingly:
 ```xml
 <?xml version="1.0"?>
 <ruleset>
