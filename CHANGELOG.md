@@ -1,6 +1,21 @@
 CHANGELOG
 =========
 
+## 1.1.2 (2022-08-31)
+
+### Update
+
+* add licensing
+* update the instructions
+
+
+## 1.1.1 (2022-05-31)
+
+### Update
+
+* remove installed_paths
+
+
 ## 1.1.0 (2022-05-17)
 
 ### Update
