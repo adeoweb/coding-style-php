@@ -3,6 +3,7 @@
     "description": "AdeoWeb standards",
     "type": "library",
     "minimum-stability": "stable",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "AdeoWebCodingStandard\\": "src/AdeoWebCodingStandard"
