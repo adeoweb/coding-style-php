@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 1.1.3 (2022-08-31)
+
+### Update
+
+* add license information into composer.json
+
+
 ## 1.1.2 (2022-08-31)
 
 ### Update
