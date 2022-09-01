@@ -10,7 +10,7 @@
         }
     },
     "require": {
-        "slevomat/coding-standard": "^7"
+        "slevomat/coding-standard": "^8"
     },
     "suggest": {
         "magento/magento-coding-standard": "Required for usage with magento."
