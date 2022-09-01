@@ -1,6 +1,14 @@
 CHANGELOG
 =========
 
+## 1.1.4 (2022-09-01)
+
+### Update
+
+* slevomat coding standard update to 8
+* delete .gitlab-ci.yml
+
+
 ## 1.1.3 (2022-08-31)
 
 ### Update
