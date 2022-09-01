@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+## 1.1.5 (2022-09-01)
+
+### Update
+
+* remove missing TypeHints.PropertyTypeHintSpacing
+
+
 ## 1.1.4 (2022-09-01)
 
 ### Update
