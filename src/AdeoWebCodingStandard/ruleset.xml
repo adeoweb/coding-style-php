@@ -2,10 +2,12 @@
 <ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="AdeoWebCodingStandard" xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
     <description>Adeo Web coding standard</description>
 
+    <rule ref="Generic.CodeAnalysis">
+        <exclude name="Generic.Files.LineLength.TooLong" />
+    </rule>
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
     <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
-    <rule ref="Generic.Formatting.NoSpaceAfterCast"/>
     <rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
     <rule ref="Generic.NamingConventions.ConstructorName"/>
     <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
@@ -42,6 +44,10 @@
 
     <rule ref="PSR2.Files.EndFileNewline">
         <type>error</type>
+    </rule>
+
+    <rule ref="PSR2.ControlStructures.ControlStructureSpacing">
+        <exclude name="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace" />
     </rule>
 
     <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
@@ -99,6 +105,9 @@
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.Classes.SuperfluousTraitNaming"/>
+    <rule ref="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming.SuperfluousSuffix">
+        <exclude-pattern>*/Exception/*.php</exclude-pattern>
+    </rule>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseDeclaration"/>
     <rule ref="SlevomatCodingStandard.Classes.TraitUseSpacing">
         <properties>
@@ -119,23 +128,7 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition">
         <type>warning</type>
     </rule>
-    <rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing">
-        <properties>
-            <property name="linesCountBeforeControlStructure" value="1"/>
-            <property name="linesCountBeforeFirstControlStructure" value="0"/>
-            <property name="linesCountAfterControlStructure" value="1"/>
-            <property name="linesCountAfterLastControlStructure" value="0"/>
-            <property name="tokensToCheck" type="array">
-                <element value="T_IF"/>
-                <element value="T_DO"/>
-                <element value="T_WHILE"/>
-                <element value="T_FOR"/>
-                <element value="T_FOREACH"/>
-                <element value="T_SWITCH"/>
-                <element value="T_TRY"/>
-            </property>
-        </properties>
-    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.BlockControlStructureSpacing"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
@@ -149,13 +142,6 @@
         <properties>
             <property name="linesCountAfterWhenLastInLastCaseOrDefault" value="0"/>
             <property name="linesCountAfterWhenLastInCaseOrDefault" value="1"/>
-            <property name="tokensToCheck" type="array">
-                <element value="T_GOTO"/>
-                <element value="T_CONTINUE"/>
-                <element value="T_THROW"/>
-                <element value="T_YIELD"/>
-                <element value="T_YIELD_FROM"/>
-            </property>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.LanguageConstructWithParentheses"/>
@@ -183,9 +169,10 @@
     <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
     <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
-    <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
-    <rule ref="SlevomatCodingStandard.Classes.RequireConstructorPropertyPromotion"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat"/>
+    <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch">
+        <exclude name="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch.NonCapturingCatchRequired" />
+    </rule>
     <rule ref="SlevomatCodingStandard.Functions.FunctionLength"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullSafeObjectOperator"/>
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/>
@@ -219,6 +206,7 @@
     <rule ref="SlevomatCodingStandard.PHP.ReferenceSpacing"/>
     <rule ref="SlevomatCodingStandard.PHP.RequireExplicitAssertion">
         <type>warning</type>
+        <exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion.RequiredExplicitAssertion" />
     </rule>
     <rule ref="SlevomatCodingStandard.PHP.RequireNowdoc"/>
     <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
@@ -230,6 +218,7 @@
         <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.IncorrectStrictTypesFormat"/>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
+        <exclude-pattern>*Interface.php$</exclude-pattern>
         <type>warning</type>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint"><type>warning</type></rule>
@@ -254,5 +243,17 @@
     <rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"/>
     <rule ref="AdeoWebCodingStandard.Operators.ComparisonOperatorUsage.NotAllowed">
         <type>warning</type>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.RequireArrowFunction.RequiredArrowFunction">
+        <exclude-pattern>*.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall.MissingTrailingComma">
+        <exclude-pattern>*.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma">
+        <exclude-pattern>*.php$</exclude-pattern>
+    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation">
+        <exclude-pattern>*Interface.php$</exclude-pattern>
     </rule>
 </ruleset>

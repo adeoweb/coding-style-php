@@ -2,8 +2,23 @@
 <ruleset name="AdeoWebCodingStandardMagento">
     <rule ref="../ruleset.xml"/>
     <rule ref="./vendor/magento/magento-coding-standard/Magento2/ruleset.xml">
+        <exclude name="Magento2.Annotation.MethodArguments.ParamMissing" />
+        <exclude name="Magento2.Annotation.MethodArguments.ParamOrder"/>
+        <exclude name="Magento2.Annotation.MethodArguments.NoCommentBlock" />
+        <exclude name="Magento2.Annotation.MethodAnnotationStructure.MethodAnnotation" />
+        <exclude name="Magento2.Annotation.MethodAnnotationStructure.MethodArguments" />
+        <exclude name="Magento2.Annotation.MethodAnnotationStructure.NoCommentBlock" />
+        <exclude name="Magento2.Annotation.MethodArguments.ArgumentMissing"/>
+        <exclude name="Magento2.Commenting.ClassPropertyPHPDocFormatting.MissingVar"/>
         <exclude name="Magento2.Security.InsecureFunction.Found" />
         <exclude name="PSR2.ControlStructures.ControlStructureSpacing" />
+        <exclude name="Magento2.Commenting.ClassPropertyPHPDocFormatting.Missing" />
+        <exclude name="Magento2.GraphQL" />
+        <exclude name="Magento2.Less" />
+        <exclude name="Squiz.CSS.NamedColours" />
+    </rule>
+    <rule ref="Magento2.Html">
+        <exclude-pattern>*/email/*.html</exclude-pattern>
     </rule>
     <rule ref="Generic.PHP.DisallowAlternativePHPTags.MaybeASPOpenTagFound">
         <exclude-pattern>*.phtml</exclude-pattern>
@@ -44,7 +59,7 @@
         <exclude-pattern>*/(Service|Api)/*.php$</exclude-pattern>
     </rule>
     <rule ref="SlevomatCodingStandard.TypeHints.DisallowMixedTypeHint.DisallowedMixedTypeHint">
-        <exclude-pattern>*/(Service|Api)/*.php$</exclude-pattern>
+        <exclude-pattern>*/(Service|Api|Plugin)/*.php$</exclude-pattern>
     </rule>
     <!-- General PHP -->
     <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing">
@@ -57,14 +72,25 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingNativeTypeHint">
         <exclude-pattern>*/Plugin/*.php$</exclude-pattern>
     </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification">
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint">
         <exclude-pattern>*/Plugin/*.php$</exclude-pattern>
     </rule>
-    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification">
         <exclude-pattern>*/Plugin/*.php$</exclude-pattern>
     </rule>
     <!-- GraphQL -->
     <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
-        <exclude-pattern>*/Resolver/*.php$</exclude-pattern>
+        <exclude-pattern>*/(Resolver|Plugin)/*.php$</exclude-pattern>
+    </rule>
+    <!-- Tests -->
+    <rule ref="SlevomatCodingStandard.Functions.FunctionLength.FunctionLength">
+        <exclude-pattern>*/Test/*.php$</exclude-pattern>
+    </rule>
+    <!-- Magewire -->
+    <rule ref="SlevomatCodingStandard.Classes.ForbiddenPublicProperty.ForbiddenPublicProperty">
+        <exclude-pattern>*/Magewire/*.php</exclude-pattern>
+    </rule>
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod.Found">
+        <exclude-pattern>*/Magewire/*.php</exclude-pattern>
     </rule>
 </ruleset>

@@ -4,15 +4,21 @@
     "type": "library",
     "minimum-stability": "stable",
     "license": "MIT",
+    "authors": [
+        {
+            "email": "info@adeoweb.biz",
+            "name": "Adeo Web"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "AdeoWebCodingStandard\\": "src/AdeoWebCodingStandard"
         }
     },
     "require": {
-        "slevomat/coding-standard": "^8.4"
+        "slevomat/coding-standard": "^8.15"
     },
     "suggest": {
-        "magento/magento-coding-standard": "Required for usage with magento."
+        "magento/magento-coding-standard": "Required for usage with Magento 2."
     }
 }
